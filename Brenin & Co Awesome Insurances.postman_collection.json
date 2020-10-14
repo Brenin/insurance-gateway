@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "bb5311f5-6a4e-4f12-b844-b093700c4d21",
+		"name": "Brenin & Co Awesome Insurances",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Insurance Contract",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"personData\" : {\r\n    \"lastName\" : \"lastName\",\r\n    \"firstName\" : \"firstName\",\r\n    \"email\" : \"eirikur.lundin@outlook.com\",\r\n    \"pin\" : \"pin\",\r\n    \"citizenshipCountryCode\" : \"ROU\"\r\n  },\r\n  \"address\" : {\r\n    \"streetName\" : \"streetName\",\r\n    \"number\" : \"number\",\r\n    \"entrance\" : \"entrance\",\r\n    \"apartment\" : \"apartment\",\r\n    \"floor\" : \"floor\",\r\n    \"postalCode\" : \"postalCode\",\r\n    \"city\" : \"city\",\r\n    \"countryThreeLetterCode\" : \"ROU\"\r\n  },\r\n  \"insuranceType\" : \"CAR_INSURANCE\",\r\n  \"insuredAmount\" : 10,\r\n  \"insuredAmountCurrency\" : \"RON\",\r\n  \"startDate\" : \"2020-10-14\",\r\n  \"endDate\" : \"2022-10-14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/insurance_gateway/api/createContract",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insurance_gateway",
+						"api",
+						"createContract"
+					]
+				},
+				"description": "Includes JSON to create a new insurance contract.\r\nThe returned data is also in JSON format."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

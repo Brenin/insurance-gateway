@@ -1,6 +1,5 @@
 package com.insurance.gateway.dto.operations;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -8,9 +7,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
-public abstract class AbstractResponse {
+public class ActivateContractResponse extends AbstractResponse {
 
-    private String errorMessage;
+    private boolean contractWasActivated;
 
 }

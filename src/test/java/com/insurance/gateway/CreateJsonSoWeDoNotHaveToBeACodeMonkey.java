@@ -26,6 +26,7 @@ public class CreateJsonSoWeDoNotHaveToBeACodeMonkey {
         PersonDataDTO personData = new PersonDataDTO(
                 "lastName",
                 "firstName",
+                "eirikur.lundin@outlook.com",
                 "pin",
                 "ROU"
         );

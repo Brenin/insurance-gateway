@@ -25,7 +25,7 @@ public class CreateNewCustomerService {
         // For the moment we only have a NonNull requirement which is taken care of by the annotations.
 
         NewCustomerRequest  request  = new NewCustomerRequest(personData, address);
-        NewCustomerResponse response = null;
+        NewCustomerResponse response;
         try {
             response = ExternalServiceUtil.callExternalResourceAndReturnResponse(requestUrl, request, NewCustomerResponse.class);
         } catch (IOException e) {
