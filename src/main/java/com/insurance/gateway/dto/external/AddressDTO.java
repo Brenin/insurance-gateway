@@ -1,10 +1,11 @@
-package com.insurance.gateway.dto;
+package com.insurance.gateway.dto.external;
 
 import lombok.*;
 
 @Getter
 @Setter
-@NoArgsConstructor@AllArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
 public class AddressDTO {
 
     @NonNull private String streetName;

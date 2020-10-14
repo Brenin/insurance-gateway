@@ -2,10 +2,10 @@ package com.insurance.gateway;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.insurance.gateway.dto.AddressDTO;
-import com.insurance.gateway.dto.InsuranceType;
-import com.insurance.gateway.dto.NewInsuranceRequest;
-import com.insurance.gateway.dto.PersonDataDTO;
+import com.insurance.gateway.dto.external.AddressDTO;
+import com.insurance.gateway.dto.external.InsuranceType;
+import com.insurance.gateway.dto.operations.NewInsuranceRequest;
+import com.insurance.gateway.dto.external.PersonDataDTO;
 
 import java.math.BigDecimal;
 

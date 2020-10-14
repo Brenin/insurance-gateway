@@ -22,23 +22,15 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    //compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.0.9.RELEASE'
-    compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.9.RELEASE') {
-        exclude module: "spring-boot-starter-tomcat"
-    }
-    //compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.0.9.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-mail:2.3.4.RELEASE'
 
-    def tomcatVersion = '8.5.4'
-    implementation "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}"
-    implementation "org.apache.tomcat.embed:tomcat-embed-el:${tomcatVersion}"
-    implementation "org.apache.tomcat.embed:tomcat-embed-websocket:${tomcatVersion}"
-    implementation "org.apache.tomcat:tomcat-annotations-api:${tomcatVersion}"
-
-        //compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.4.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.3.4.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.4.RELEASE'
 
     //compile group: 'org.jboss.resteasy', name: 'resteasy-jaxrs', version: '3.13.2.Final'
     compile group: 'org.jboss.resteasy', name: 'resteasy-spring-boot-starter', version: '4.6.4.Final'
 
+    compile group: 'org.modelmapper', name: 'modelmapper', version: '2.3.8'
 
     compileOnly 'org.projectlombok:lombok:1.18.14'
     annotationProcessor 'org.projectlombok:lombok:1.18.14'

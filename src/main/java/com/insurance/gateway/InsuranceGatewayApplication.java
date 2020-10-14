@@ -12,7 +12,7 @@ public class InsuranceGatewayApplication extends SpringBootServletInitializer {
         SpringApplication.run(InsuranceGatewayApplication.class, args);
 
         LoggingUtil.logInfo("--------------------------------------------------");
-        LoggingUtil.logInfo(InsuranceGatewayApplication.class.getSimpleName() + " started successfully");
+        LoggingUtil.logInfo(InsuranceGatewayApplication.class.getSimpleName() + " started successfully in embedded tomcat");
         LoggingUtil.logInfo("--------------------------------------------------");
     }
 

@@ -1,4 +1,4 @@
-package com.insurance.gateway.dto;
+package com.insurance.gateway.dto.external;
 
 public enum InsuranceType {
 

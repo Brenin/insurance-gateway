@@ -1,12 +1,12 @@
 package com.insurance.gateway.dto;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NonNull;
+import lombok.Setter;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
-public class PersonDataDTO {
+public class Person {
 
     @NonNull private String lastName;
     @NonNull private String firstName;
